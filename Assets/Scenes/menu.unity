@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 1602257611}
   - component: {fileID: 1602257610}
   m_Layer: 0
-  m_Name: Menu Manager
+  m_Name: Game Manager
   m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -990,6 +990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5325155959c5c4f99075f9eb1d8b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
+  inputText: {fileID: 2012890329}
 --- !u!4 &1602257611
 Transform:
   m_ObjectHideFlags: 0

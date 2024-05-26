@@ -8,12 +8,13 @@ public class MainManager : MonoBehaviour
 {
     public Brick BrickPrefab;
     public int LineCount = 6;
+    public int highScore = 0;
     public Rigidbody Ball;
 
     public Text ScoreText;
     public Text highScoreText;
     public GameObject GameOverText;
-    public GameObject menuManager;
+    public GameObject gameManager;
     
     private bool m_Started = false;
     private int m_Points;
@@ -24,7 +25,8 @@ public class MainManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        menuManager = GameObject.FindGameObjectWithTag("Menu");
+        gameManager = GameObject.FindGameObjectWithTag("Menu");
+        //highScoreText.text = "Highscore: " + gameManager.GetComponent<GameManager>().playerName + " - " + highScore;
         const float step = 0.6f;
         int perLine = Mathf.FloorToInt(4.0f / step);
         
