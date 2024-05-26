@@ -6,6 +6,21 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+
+    public static MenuManager thisInstance;
+
+    private void Awake()
+    {
+        if (thisInstance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        thisInstance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
