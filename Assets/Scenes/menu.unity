@@ -991,6 +991,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  menuScore: 0
+  menuName: Name
+  bestScore: {fileID: 1956873676}
   inputText: {fileID: 2012890329}
 --- !u!4 &1602257611
 Transform:
@@ -1192,7 +1195,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Best score: 0'
+  m_Text: 
 --- !u!222 &1956873677
 CanvasRenderer:
   m_ObjectHideFlags: 0
